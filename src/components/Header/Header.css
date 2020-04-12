@@ -48,12 +48,12 @@
     border: none;
     background: transparent;
     padding: 0.25rem 0.5rem;
-    color: #fb7790;
+    color: #faf8f8;
 }
 
 .main-header__nav-item button:hover,
 .main-header__nav-item button:active {
-    background: #fb7790;
+    background: #0e0d0d;
     border-radius: 5px;
     color: white;
 }
