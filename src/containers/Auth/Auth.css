@@ -1,0 +1,43 @@
+
+.auth-main{
+    width: 90%;
+    margin: 4rem auto;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    padding-bottom: 3rem;
+    background: url(https://images.freeimages.com/images/large-previews/5c6/sunset-jungle-1383333.jpg) no-repeat;
+}
+
+.auth__form {
+    width: 90%;
+    margin: auto;
+    color: white;
+}
+
+.auth__form h1 {
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 500;
+   color: white;
+
+}
+
+.auth__mode-control {
+    text-align: center;
+    margin: 1rem;
+    color: white;
+}
+
+@media (min-width: 768px) {
+    
+    .auth-main{
+        width: 90%;
+        margin: 4rem auto;
+        padding: 1rem;
+        padding-bottom: 3rem;
+    }
+    
+    .auth__form {
+        width: 40rem;
+    }
+}
