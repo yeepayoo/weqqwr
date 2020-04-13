@@ -12,10 +12,14 @@ const header = props => {
             <li className="main-header__nav-item">
                 <NavLink to="/product/add">Add Product</NavLink>
             </li>
-
+            <li className="main-header__nav-item">
+                <NavLink to="/about">About</NavLink>
+            </li>
+            
             <li className="main-header__nav-item">
                 <button onClick={props.onLogout}>Logout</button>
             </li>
+            
         </ul>
     );
 
@@ -23,7 +27,7 @@ const header = props => {
         links = (
           <ul className="main-header__nav-items">
             <li className="main-header__nav-item">
-              <NavLink to="/auth">Authenticate</NavLink>
+            
             </li>
           </ul>
         );
