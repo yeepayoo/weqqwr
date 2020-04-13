@@ -2,7 +2,8 @@ const mongodb = require('mongodb');
 
 const MongoClient = mongodb.MongoClient;
 
-const url = "mongodb+srv://gaurav:test1234@shop-project-iemfr.mongodb.net/shop?retryWrites=true";
+const url = "mongodb+srv://mark:hok@markhok-digyq.mongodb.net/test?retryWrites=true&w=majority";
+
 let db;
 
 const initDB = callback => {
