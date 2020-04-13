@@ -9,6 +9,7 @@ import ProductsPage from './containers/Product/ProductsPage';
 import ProductPage from './containers/Product/ProductPage';
 import EditProduct from './containers/Product/EditProduct';
 import AuthPage from './containers/Auth/Auth';
+import About from './containers/Product/About';
 
 class App extends Component {
   state = {
@@ -92,6 +93,15 @@ class App extends Component {
             <ProductsPage {...props} onError={this.errorHandler} />
           )}
         />
+        
+        <Route path="/about" render={props => (
+            <About {...props} onError={this.errorHandler} />
+          )}
+        />
+          <Route path="/about/:id" render={props => (
+            <About {...props} onError={this.errorHandler} />
+          )}
+        />
       </Switch>
     );
 
@@ -101,9 +111,11 @@ class App extends Component {
           <Redirect from="/" to="/auth" exact />
           <Redirect from="/products" to="/auth" />
           <Redirect from="/product" to="/auth" />
+          <Redirect from="/about" to="/auth" />
           <Route path="/auth" render={() => (
               <AuthPage mode={this.state.authMode} onAuth={this.authHandler} onAuthModeChange={this.authModeChangedHandler} />
           )}/>
+        
         </Switch>
       );
     }
