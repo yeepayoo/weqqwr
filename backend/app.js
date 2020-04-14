@@ -45,7 +45,7 @@ db.initDB( (err, db) => {
   if(err){
     console.log(err);
   } else {
-    app.listen(3100, () => console.log('Server stared on 3100 Port'));
+    app.listen(5000, () => console.log('Server stared on 5000 Port'));
   }
 })
 
